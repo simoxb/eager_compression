@@ -139,7 +139,7 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(message)s")
 
     if OUT_FWD == None:
-        out_fwd = os.path.join(os.getcwd(), Path(IN_FWD).stem + ".r1.fq.gz")
+        out_fwd = os.path.join(os.getcwd(), Path(IN_FWD).stem + ".r1.fq")
     else:
         out_fwd = OUT_FWD
 
@@ -167,7 +167,7 @@ if __name__ == "__main__":
     # REVERSE FILE
     if IN_REV:
         if OUT_REV == None:
-            out_rev = os.path.join(os.getcwd(), Path(IN_REV).stem + ".r2.fq.gz")
+            out_rev = os.path.join(os.getcwd(), Path(IN_REV).stem + ".r2.fq")
         else:
             out_rev = OUT_REV
         logging.info(f"- Checking reverse fq file {IN_FWD}")
