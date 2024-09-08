@@ -830,7 +830,7 @@ process adapter_removal {
 
     AdapterRemoval --file1 ${r1} --file2 ${r2} --basename ${base}.pe --threads ${task.cpus} --qualitymax ${params.qualitymax} --collapse ${preserve5p} --trimns --trimqualities ${adapters_to_remove} --minlength ${params.clip_readlength} --minquality ${params.clip_min_read_quality} --minadapteroverlap ${params.min_adap_overlap}
 
-    cat *.collapsed *.collapsed.truncated *.singleton.truncated*.pair1.truncated *.pair2.truncated > output/${base}.pe.combined.tmp.fq
+    cat *.collapsed *.collapsed.truncated *.singleton.truncated *.pair1.truncated *.pair2.truncated > output/${base}.pe.combined.tmp.fq
     
     mv *.settings output/
 
